@@ -1,7 +1,26 @@
-const AboutSection = () => (
-  <>
-    <div className="md:py-40 py-20 bg-white  rounded-t-4xl top-[-15] h-full">
-      <h2 className="text-4xl font-bold mb-10 text-center"   >About Us</h2>
+import { Link, useLocation } from "react-router-dom";
+import Achievements from "./Achievements";
+import { useEffect, useState } from "react";
+
+
+
+
+const AboutSection = () => {
+  
+  const location = useLocation();
+  const [about, setAbout] = useState(false)
+  
+  useEffect(() => {
+    location.pathname == "/about" ? setAbout(true) : setAbout(false)
+  },[location.pathname])
+  
+
+
+
+  return (
+    <>
+    <div className="md:pt-30 py-20 bg-white  rounded-t-4xl top-[-15] h-full">
+      <h2 className="md:text-3xl text-2xl font-bold md:mb-5  text-center"   >About Us</h2>
       <div className="flex flex-col md:flex-row p-8 items-center gap-8">
         <div className="relative flex justify-center items-center">
           <img src="https://res.cloudinary.com/div7mzklt/image/upload/v1757074212/building-education-florida-photos_2_1_pssnht.png" alt="About" className="w-full md:w-1/2 rounded-lg z-2 shadow" />
@@ -13,14 +32,17 @@ const AboutSection = () => (
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
           </p>
           <div className="sm:text-center sm:pt-5">
-            <button className="mt-4 px-4 py-2  text-white rounded hover:bg-blue-900 "  style={{ backgroundColor: '#273359' }}>
+           { !about && <Link to ="/about"><button className="mt-4 px-4 py-2  text-white rounded hover:bg-blue-400 hover:cursor-pointer hover: "  style={{ backgroundColor: '#273359' }}>
               Read More
-            </button>
+            </button></Link>}
           </div>
         </div>
       </div>
+      { !about && <Achievements/>}
+      
     </div>
   </>
-);
+  ) 
+};
 
 export default AboutSection;

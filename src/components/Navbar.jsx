@@ -18,10 +18,12 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-white shadow-md p-4 flex justify-between items-center ">
-        <div className="flex items-center gap-2">
-          <img src="https://res.cloudinary.com/div7mzklt/image/upload/v1757069523/logo_cropped_zv49kp.jpg" alt="Logo" className="w-20 h-full" />
-          <h1 className="text-xl font-bold">CRESCENT PUBLIC SCHOOL</h1>
-        </div>
+        <Link to="/">
+          <div className="flex items-center gap-2">
+            <img src="https://res.cloudinary.com/div7mzklt/image/upload/v1757069523/logo_cropped_zv49kp.jpg" alt="Logo" className="md:w-20 w-15 h-full" />
+            <h1 className="md:text-xl text-lg font-bold">CRESCENT PUBLIC SCHOOL</h1>
+          </div>
+        </Link>
 
         <ul className=" gap-6 font-medium hidden md:flex">
           <li><Link to="/" className="hover:text-blue-600">Home</Link></li>
