@@ -39,11 +39,11 @@ const MembersSection = () => {
 
   return (
     <>
-      <div className=" text-white md:py-40 md:px-70 py-20 px-20" style={{ backgroundColor: '#273359' }}>
-        <h2 className="text-2xl md:text-4xl font-bold mb-10 text-center">Members</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-7 ">
+      <div className=" text-white md:py-30 md:px-60 py-20 px-20" style={{ backgroundColor: '#273359' }}>
+        <h2 className="text-2xl md:text-4xl font-bold mb-10 text-center"  data-aos="fade-up" data-aos-duration="2000">Members</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 ">
           {members.slice(0, numberToShow).map((m, i) => (
-            <div key={i} className="bg-white text-black border-white border-1  shadow text-center z-2">
+            <div key={i} className="bg-white text-black border-white border-1  shadow text-center z-2" data-aos="fade-up" data-aos-duration="1000">
               <img src={m.img} alt={m.name} className="w-full md:h-80 h-60 object-cover  mb-4" />
               <h3 className="font-bold md:text-lg">{m.role}</h3>
               <p className="pb-3">{m.name}</p>
@@ -52,7 +52,7 @@ const MembersSection = () => {
         </div>
         {
           location.pathname !== "/members" && <div className="text-center pt-20  z-6 ">
-          <Link to="/members"><button className="px-4 py-2 bg-yellow-500 text-black rounded hover:bg-yellow-600 ">
+          <Link to="/members"><button className="px-4 py-2 bg-yellow-500 text-black rounded hover:bg-yellow-600 " data-aos="fade-up" data-aos-duration="1000">
             View More
           </button></Link>
         </div>
