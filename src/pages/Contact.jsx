@@ -20,10 +20,10 @@ const Contact = () => {
     console.log("Form Data:", formData);
     emailjs
       .send(
-        "service_88pb8bf",
-        "template_h237g1l",
+        "service_88pb8bf",  // service ID
+        "template_h237g1l",  // template ID
         formData,
-        "ejVooU2diqzd-B_U0"
+        "ejVooU2diqzd-B_U0"   // public key
       )
       .then(
         (result) => {

@@ -40,13 +40,13 @@ const MembersSection = () => {
   return (
     <>
       <div className=" text-white md:py-40 md:px-70 py-20 px-20" style={{ backgroundColor: '#273359' }}>
-        <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center">Members</h2>
+        <h2 className="text-2xl md:text-4xl font-bold mb-10 text-center">Members</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7 ">
           {members.slice(0, numberToShow).map((m, i) => (
             <div key={i} className="bg-white text-black border-white border-1  shadow text-center z-2">
               <img src={m.img} alt={m.name} className="w-full md:h-80 h-60 object-cover  mb-4" />
-              <h3 className="font-bold">{m.role}</h3>
-              <p>{m.name}</p>
+              <h3 className="font-bold md:text-lg">{m.role}</h3>
+              <p className="pb-3">{m.name}</p>
             </div>
           ))}
         </div>

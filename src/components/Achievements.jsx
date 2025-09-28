@@ -1,6 +1,6 @@
 import AOS from "aos"
 import "aos/dist/aos.css";
-AOS.init({ duration: 750, offset: -100,  once: false });
+AOS.init({ duration: 250, offset: 50,  once: false });
 
 
 
@@ -15,7 +15,7 @@ function Achievements() {
                         <p className="text-xl md:text-3xl mt-3">Students</p>
                     </div>
                     <div className=" py-5 px-10  md:px-20">
-                        <h1 className="text-5xl md:text-7xl ">250+</h1>
+                        <h1 className="text-5xl md:text-7xl ">25+</h1>
                         <p className="text-xl md:text-3xl mt-3">Faculties</p>
                     </div>
                </div>

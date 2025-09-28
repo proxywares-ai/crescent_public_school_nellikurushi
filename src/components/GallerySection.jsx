@@ -31,7 +31,7 @@ const GallerySection = () => {
   return (
     <>
       <div className="md:py-40 py-20 md:px-40 bg-white">
-        <h2 className="text-3xl font-bold mb-10 text-center">Gallery</h2>
+        <h2 className="text-2xl md:text-4xl font-bold mb-10 text-center">Gallery</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 place-items-center px-3">
           {images.slice(0,numbersToShow).map((img, i) => (
             <img key={i} src={img} alt="Gallery" className="rounded-lg shadow w-100 h-full" />
