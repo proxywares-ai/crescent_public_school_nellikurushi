@@ -10,14 +10,14 @@ const MembersSection = () => {
     { name: "Ashraf Malayil", role: "Administrator", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763740/Ashraf_Malayil_ov5o3g.jpg" },
     { name: "Saleena P", role: "Principal", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763745/Principal_-_Saleena_P_pevvpn.jpg" },
     { name: "Ambika TR", role: "Vice principal", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763733/Vice_principal_-_Ambika_TR_ewyngb.jpg" },
-    { name: "Muhammed P", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763742/Muhammed_P_cgjums.jpg" },
-    { name: "Yousaf", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763737/Yousaf_shckzj.jpg" },
-    { name: "K Moideen", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763739/K_Moideen_d1iyrf.jpg" },
-    { name: "Muhammed M", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757765169/Muhammed_M_d8x81m.jpg" },
-    { name: "Muhammed Shafi", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763738/Muhammed_Shafi_yhwlri.jpg" },
-    { name: "Shafeer M", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763735/Safeer_qcmt6w.jpg" },
-    { name: "Rasheed V", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763742/Rasheed_V_mwaguq.jpg" },
-    { name: "Saidh Muhammed", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763743/Saidh_Muhammed_wp3qlp.jpg" },
+    { name: "Yousaf", role: "Board of Member", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763737/Yousaf_shckzj.jpg" },
+    { name: "K Moideen", role: "Board of Member", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763739/K_Moideen_d1iyrf.jpg" },
+    { name: "Saidh Muhammed", role: "Board of Member", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763743/Saidh_Muhammed_wp3qlp.jpg" },
+    { name: "Muhammed P", role: "Board of Member", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763742/Muhammed_P_cgjums.jpg" },
+    { name: "Muhammed Shafi", duty:"(Legal Coordinator)", role: "Board of Member", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763738/Muhammed_Shafi_yhwlri.jpg" },
+    { name: "Muhammed M", duty:"(Academic Coordinator)", role: "Board of Member", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757765169/Muhammed_M_d8x81m.jpg" },
+    { name: "Rasheed V", duty:"(Transportation Coordinator)", role: "Board of Member", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763742/Rasheed_V_mwaguq.jpg" },
+    { name: "Shafeer M", duty:"(Transportation Coordinator)", role: "Board of Member", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763735/Safeer_qcmt6w.jpg" },
   ];
 
 
@@ -47,6 +47,7 @@ const MembersSection = () => {
               <img src={m.img} alt={m.name} className="w-full md:h-80 h-60 object-cover  mb-4" />
               <h3 className="font-bold md:text-lg">{m.role}</h3>
               <p className="pb-3">{m.name}</p>
+              <p className="pb-1">{m.duty}</p>
             </div>
           ))}
         </div>
