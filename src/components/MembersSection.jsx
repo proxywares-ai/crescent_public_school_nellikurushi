@@ -7,17 +7,17 @@ const MembersSection = () => {
   const members = [
     { name: "Moideen A", role: "Chairman", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763740/Moideen_A_cpjqsm.jpg" },
     { name: "Abdurahman M", role: "Manager", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763740/Manager_-_Abdurahman_M_k5ssyk.jpg" },
+    { name: "Ashraf Malayil", role: "Administrator", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763740/Ashraf_Malayil_ov5o3g.jpg" },
     { name: "Saleena P", role: "Principal", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763745/Principal_-_Saleena_P_pevvpn.jpg" },
     { name: "Ambika TR", role: "Vice principal", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763733/Vice_principal_-_Ambika_TR_ewyngb.jpg" },
+    { name: "Muhammed P", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763742/Muhammed_P_cgjums.jpg" },
+    { name: "Yousaf", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763737/Yousaf_shckzj.jpg" },
     { name: "K Moideen", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763739/K_Moideen_d1iyrf.jpg" },
     { name: "Muhammed M", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757765169/Muhammed_M_d8x81m.jpg" },
     { name: "Muhammed Shafi", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763738/Muhammed_Shafi_yhwlri.jpg" },
     { name: "Shafeer M", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763735/Safeer_qcmt6w.jpg" },
     { name: "Rasheed V", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763742/Rasheed_V_mwaguq.jpg" },
-    { name: "Ashraf Malayil", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763740/Ashraf_Malayil_ov5o3g.jpg" },
-    { name: "Muhammed P", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763742/Muhammed_P_cgjums.jpg" },
     { name: "Saidh Muhammed", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763743/Saidh_Muhammed_wp3qlp.jpg" },
-    { name: "Yousaf", role: "Board of Members", img: "https://res.cloudinary.com/div7mzklt/image/upload/v1757763737/Yousaf_shckzj.jpg" },
   ];
 
 
