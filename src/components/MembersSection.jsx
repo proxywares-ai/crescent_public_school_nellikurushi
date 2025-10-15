@@ -45,9 +45,9 @@ const MembersSection = () => {
           {members.slice(0, numberToShow).map((m, i) => (
             <div key={i} className="bg-white text-black border-white border-1  shadow text-center z-2 pb-3" data-aos="fade-up" data-aos-duration="1000">
               <img src={m.img} alt={m.name} className="w-full md:h-80 h-60 object-cover  mb-4" />
-              <p className="text-2xl font-semibold pb-2">{m.name}</p>
-              <h3 className="text-lg italic">{m.role}</h3>
-              <p className="italic">{m.duty}</p>
+              <p className="text-xl md:text-2xl font-semibold pb-2">{m.name}</p>
+              <h3 className="text-sm md:text-lg italic">{m.role}</h3>
+              <p className="text-sm italic">{m.duty}</p>
             </div>
           ))}
         </div>
