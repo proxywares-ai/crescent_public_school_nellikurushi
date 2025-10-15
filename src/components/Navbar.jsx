@@ -13,6 +13,7 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+ 
 
 
   return (
@@ -25,13 +26,13 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <ul className=" gap-6 font-medium hidden md:flex">
-          <li><Link to="/" className="hover:text-blue-600">Home</Link></li>
-          <li><Link to="/about" className="hover:text-blue-600">About</Link></li>
-          <li><Link to="/members" className="hover:text-blue-600">Members</Link></li>
-          <li><Link to="/gallery" className="hover:text-blue-600">Gallery</Link></li>
-          <li><Link to="/contact" className="hover:text-blue-600">Contact</Link></li>
-        </ul>
+        <div className=" gap-6 font-medium text-lg hidden md:flex items-center">
+          <div><Link to="/" className="hover:text-blue-600">Home</Link></div>
+          <div><Link to="/about" className="hover:text-blue-600">About</Link></div>
+          <div><Link to="/members" className="hover:text-blue-600">Members</Link></div>
+          <div><Link to="/gallery" className="hover:text-blue-600">Gallery</Link></div>
+          <div className="bg-[#273359] text-white border-2 px-5 py-2 rounded-lg hover:text-[#273359] hover:bg-white hover:border-2" ><Link to="/contact" className="">Contact</Link></div>
+        </div>
 
 
         <div className="md:hidden">
@@ -52,14 +53,13 @@ const Navbar = () => {
 
       </nav>
       {isOpen &&
-        (<ul className=" gap-6 font-medium bg-white p-4 flex-col">
-          <li className="px-4 py-2"   onClick={() => handleSelect()}><Link to="/" className="hover:text-blue-600" >Home</Link></li>
-          <li className="px-4 py-2"   onClick={() => handleSelect()}><Link to="/about" className="hover:text-blue-600">About</Link></li>
-          <li className="px-4 py-2"   onClick={() => handleSelect()}><Link to="/members" className="hover:text-blue-600">Members</Link></li>
-          <li className="px-4 py-2"   onClick={() => handleSelect()}><Link to="/gallery" className="hover:text-blue-600">Gallery</Link></li>
-          <li className="px-4 py-2"   onClick={() => handleSelect()}><Link to="/institutions" className="hover:text-blue-600">Institutions</Link></li>
-          <li className="px-4 py-2"   onClick={() => handleSelect()}><Link to="/contact" className="hover:text-blue-600">Contact</Link></li>
-        </ul>)
+        (<div className=" gap-6 font-medium bg-white p-4 flex-col">
+          <Link to="/" className="hover:text-blue-600" ><div className="px-4 py-2"   onClick={() => handleSelect()}>Home</div></Link> 
+          <Link to="/about" className="hover:text-blue-600"><div className="px-4 py-2"   onClick={() => handleSelect()}>About</div></Link> 
+          <Link to="/members" className="hover:text-blue-600"><div className="px-4 py-2"   onClick={() => handleSelect()}>Members</div></Link>
+          <Link to="/gallery" className="hover:text-blue-600"><div className="px-4 py-2"   onClick={() => handleSelect()}>Gallery</div></Link> 
+          <Link to="/contact" className="hover:text-blue-600"><div className="px-4 py-2"   onClick={() => handleSelect()}>Contact</div></Link>
+        </div>)
 
       }
     </>

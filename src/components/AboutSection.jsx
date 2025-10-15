@@ -30,7 +30,8 @@ const AboutSection = () => {
 
           </div>
           <div className="md:w-3/4 text-justify md:pt-20"  >
-            {about ? <div className="md:w-full "  > <p className="text-gray-1000 md:text-lg " data-aos="fade-up"
+            {about ? 
+            <div className="md:w-full "  > <p className="text-gray-1000 md:text-lg " data-aos="fade-up"
               data-aos-duration="2000">
               <span className="font-bold md:text-2xl ml-10">Crescent Public School</span> is a prestigious educational institution located in the serene town of Nellikkurussi, Palakkad district, Kerala. With a strong commitment to holistic education,
               we cater to students from LKG  to VII Std, providing a solid foundation for their academic and personal development.
@@ -91,9 +92,9 @@ const AboutSection = () => {
                 </p>
 
 
-                <div className="text-end   sm:pt-5" data-aos="fade-up"
+                <div className="text-end  cursor-pointer   sm:pt-5" data-aos="fade-up"
                   data-aos-duration="1000">
-                  {!about && <Link to="/about"><button className="mt-4 px-4 py-2  text-white rounded hover:bg-blue-400 hover:cursor-pointer hover: " style={{ backgroundColor: '#273359' }}>
+                  {!about && <Link to="/about"><button className="mt-4 px-4 py-2  text-white bg-[#273359]  border-2  rounded-lg hover:text-[#273359] hover:bg-white hover:border-2 hover:cursor-pointer " >
                     Read More
                   </button></Link>}
                 </div>
@@ -103,7 +104,7 @@ const AboutSection = () => {
 
 
 
-        <div className="w-full h-auto mt-10">
+        <div className="w-full h-auto mt-10 overflow-x-hidden">
           <div className="w-full  md:flex object-cover  md:my-40 py-25 text-black bg-[linear-gradient(165deg,#273359_50%,#ffffff_50%)] md:bg-[linear-gradient(125deg,#273359_50%,#ffffff_50%)]" data-aos="fade-right"
             data-aos-offset="10"
             data-aos-easing="ease-in-sine">
@@ -114,7 +115,7 @@ const AboutSection = () => {
                 data-aos-duration="2000" >
                 Moideen A
               </h2>
-              <p className="md:text-xl md:pt-2text-lg italic   text-center text-white" data-aos="fade-up"
+              <p className="md:text-xl md:pt-2 text-lg italic   text-center text-white" data-aos="fade-up"
                 data-aos-duration="3000">
                   Chairman
               </p>
@@ -137,7 +138,7 @@ const AboutSection = () => {
            
 
             <div className="hidden md:w-1/2 italic md:flex items-center justify-center p-10 " >
-              <p className="text-gray-1000 md:text-lg leading-[2] text-justify pt-25 pr-10" data-aos="fade-up"
+              <p className="text-gray-1000 md:text-lg leading-[2] text-justify pt-25 pr-10 " data-aos="fade-up"
                 data-aos-duration="3000">
                 " The world around us is constantly changing and we are aware that there are many challenges that lie ahead of us as we navigate around this world of changing demands. The need of the hour is to collaborate,innovate and keep growing in order to keep pace with the changes that are inevitable.
                 Education and training today are to be aligned and geared to meet these remarkable challenges "
@@ -146,7 +147,7 @@ const AboutSection = () => {
 
              <div className="md:w-1/2 flex-col items-center justify-center ">
               <div className=" flex justify-center  " data-aos="fade-up"
-                data-aos-duration="1500"><img src="https://res.cloudinary.com/div7mzklt/image/upload/v1757763740/Manager_-_Abdurahman_M_k5ssyk.jpg" alt="" className=" w-60 h-70 md:w-90 mx-3 md:h-100 object-cover shadow-2xl rounded-xl mb-4" />
+                data-aos-duration="1500"><img src="https://res.cloudinary.com/div7mzklt/image/upload/v1760550939/Manager_-_Abdurahman_M_k5ssyk.jpg" alt="" className=" w-60 h-70 md:w-90 mx-3 md:h-100 object-cover shadow-2xl rounded-xl mb-4" />
               </div>
               <h2 className="md:text-4xl pt-5 text-2xl font-semibold   text-center text-black md:text-white" data-aos="fade-up"
                 data-aos-duration="2000" >
@@ -160,7 +161,7 @@ const AboutSection = () => {
             </div>
 
             <div className=" md:hidden md:w-1/2 italic flex items-center justify-center p-10" >
-              <p className="text-gray-1000 md:text-lg leading-[2] text-white text-justify pt-25 pr-10" data-aos="fade-up"
+              <p className="text-gray-1000 md:text-lg leading-[2] text-white text-justify pt-25 " data-aos="fade-up"
                 data-aos-duration="3000">
                 " The world around us is constantly changing and we are aware that there are many challenges that lie ahead of us as we navigate around this world of changing demands. The need of the hour is to collaborate,innovate and keep growing in order to keep pace with the changes that are inevitable.
                 Education and training today are to be aligned and geared to meet these remarkable challenges "

@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 
 
-const Footer = () => (
+const Footer = () => {
+   const currentYear = new Date().getFullYear();
+
+
+
+return(
   <footer className="bg-black text-white p-8 px-10">
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
       <div className="md:flex md:flex-col md:items-center">
@@ -40,9 +45,10 @@ const Footer = () => (
       </div>
     </div>
     <p className="text-center text-sm text-gray-400 mt-6">
-      © 2025 Crescent Public School. All Rights Reserved.
+      © {currentYear} Crescent Public School. All Rights Reserved.
     </p>
   </footer>
-);
+)
+};
 
 export default Footer;

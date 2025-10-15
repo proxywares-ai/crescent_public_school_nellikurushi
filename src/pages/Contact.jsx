@@ -41,14 +41,14 @@ const Contact = () => {
     <>
       <div className="min-h-screen bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-8" data-aos="fade-up" data-aos-duration="2000">
             Contact Us
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white shadow-lg rounded-2xl p-6">
-              <h3 className="text-xl font-semibold mb-4">Get In Touch</h3>
-              <p className="text-gray-600 mb-4">
+            <div className="bg-white shadow-lg rounded-2xl p-6" data-aos="fade-up" data-aos-duration="3000">
+              <h3 className="text-xl font-semibold mb-4" >Get In Touch</h3>
+              <p className="text-gray-600 mb-4" >
                 Have questions or need more information? We'd love to hear from
                 you!
               </p>
@@ -70,7 +70,7 @@ const Contact = () => {
 
             <form
               onSubmit={handleSubmit}
-              className="bg-white shadow-lg rounded-2xl p-6"
+              className="bg-white shadow-lg rounded-2xl p-6" data-aos="fade-up" data-aos-duration="3000"
             >
               <h3 className="text-xl font-semibold mb-4">Send a Message</h3>
               <div className="space-y-4">
